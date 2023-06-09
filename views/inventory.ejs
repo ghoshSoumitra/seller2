@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Inventory</title>
+    <style>
+       
+        body{
+        background-image: url('https://e0.pxfuel.com/wallpapers/453/370/desktop-wallpaper-ecommerce-website-design-gorakhpur-web-design-and-development-company-e-commerce.jpg');
+        background-repeat: none;
+        background-size: cover;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 32vw;
+        margin-top: 3vh;
+        background-color: white;
+        width: 31vw;
+        padding: 30px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    .input{
+        height: 4vh;
+        width: 30vw;
+
+    }
+    .btn{
+        height: 4vh;
+        width: 15vw;
+        background-color: chartreuse;
+        font-size: 1.2rem;
+        margin-top: 2vh;
+        margin-left: 7vw;
+        border-radius: 10px;
+    }
+    h1{
+        text-align: center;
+        color: white;
+    }
+    h2{
+        text-align: center;
+      text-decoration: underline;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Add Inventory</h1>
+    <form action="/inventory" method="post" id="form">
+
+        <label for="productName">Product Name</label>
+        <input type="text" name="productName" required class="input"><br>
+        <label for="mrp">MRP</label>
+        <input type="number" name="mrp" required class="input"><br>
+        <label for="sp">SP</label>
+        <input type="number" name="sp" required class="input"><br>
+        <label for="qty">Quantity</label>
+        <input type="number" name="qty" required class="input"><br>
+        <label for="images">Images</label>
+        <input type="file" name="images"  class="input"><br>
+        <button type="submit" class="btn">Submit</button>
+   
+    </form>
+</body>
+</html>

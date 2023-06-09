@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body{
+        background-image: url('https://e0.pxfuel.com/wallpapers/453/370/desktop-wallpaper-ecommerce-website-design-gorakhpur-web-design-and-development-company-e-commerce.jpg');
+        background-repeat: none;
+        background-size: cover;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 32vw;
+        margin-top: 3vh;
+        background-color: white;
+        width: 31vw;
+        padding: 30px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    .input{
+        height: 4vh;
+        width: 30vw;
+
+    }
+    .btn{
+        height: 4vh;
+        width: 15vw;
+        background-color: chartreuse;
+        font-size: 1.2rem;
+        margin-top: 2vh;
+        margin-left: 7vw;
+        border-radius: 10px;
+    }
+    h1{
+        text-align: center;
+        color: white;
+    }
+    h2{
+        text-align: center;
+      text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <h1>Dashboard</h1> <hr>
+
+    <!-- Add Store Info -->
+   
+    <form action="/dash-info" method="post" id="form">
+        <h2>Add Store Info</h2><hr>
+        <label for="address">Address</label>
+        <input type="text" name="address" required class="input"><br>
+        <label for="gst">GST</label>
+        <input type="text" name="gst" required class="input"><br>
+        <label for="logo">Logo</label>
+        <input type="file" name="logo" required class="input"><br>
+        <label for="storeTimings">Store Timings</label>
+        <input type="text" name="storeTimings" required class="input"><br>
+
+       
+        <label for="name">Category Name</label>
+        <input type="text" name="name" required class="input"><br>
+
+
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</body>
+</html>

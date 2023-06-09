@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+            background-image: url('https://e0.pxfuel.com/wallpapers/453/370/desktop-wallpaper-ecommerce-website-design-gorakhpur-web-design-and-development-company-e-commerce.jpg');
+            background-repeat: none;
+            background-size: cover;
+        }
+        #form{
+            display: flex;
+    flex-direction: column;
+    margin-left: 33vw;
+        margin-top: 17vh;
+        background-color: white;
+    width: 31vw;
+    padding: 30px;
+    border-radius: 20px;
+        }
+        .input{
+            height: 4vh;
+        width: 30vw;
+
+        }
+        .btn{
+            height: 4vh;
+        width: 15vw;
+        background-color: chartreuse;
+        font-size: 1.2rem;
+        margin-top: 2vh;
+        margin-left: 7vw;
+        border-radius: 10px;
+        }
+        h1{
+            color: white;
+        }
+        #reg{
+        margin-left: 27vw;
+    }
+      
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">
+        Sign Up 
+    </h1> <hr>
+    <div id="main">
+    <form action="/register" method="post" id="form">
+        <label for="email">Email:</label>
+        <input type="email" name="email" class="input">
+        <label for="business-name">Business Name:</label>
+        <input type="text" name="businessName" class="input">
+        <label for="password">Password:</label>
+        <input type="password" name="password" class="input">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" name="confirmPassword" class="input">
+        <button type="submit" class="btn">Submit</button>
+        <a href="/login" id="reg">LogIn?</a>
+      </form>
+    </div>
+</body>
+</html>

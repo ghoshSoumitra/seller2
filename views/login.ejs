@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIN</title>
+   <style>
+    body{
+        background-image: url('https://e0.pxfuel.com/wallpapers/453/370/desktop-wallpaper-ecommerce-website-design-gorakhpur-web-design-and-development-company-e-commerce.jpg');
+        background-repeat: none;
+        background-size: cover;
+    }
+    h1{
+        text-align: center;
+        color: white;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 32vw;
+        margin-top: 17vh;
+        background-color: white;
+        width: 31vw;
+        padding: 30px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    .input{
+        height: 4vh;
+        width: 30vw;
+
+    }
+    .btn{
+        height: 4vh;
+        width: 15vw;
+        background-color: chartreuse;
+        font-size: 1.2rem;
+        margin-top: 2vh;
+        margin-left: 7vw;
+        border-radius: 10px;
+    }
+    #reg{
+        margin-left: 27vw;
+    }
+   </style>
+</head>
+<body>
+    <h1>
+        Login
+    </h1><hr>
+    <form action="/login" method="post" id="form">
+        <label for="email">Email:</label>
+        <input type="email" name="email" class="input">
+      
+        <label for="password">Password:</label>
+        <input type="password" name="password" class="input">
+      
+        <button type="submit" class="btn">Submit</button>
+        <a href="/signup" id="reg">Register?</a>
+    </form>
+  
+    
+
+</body>
+</html>

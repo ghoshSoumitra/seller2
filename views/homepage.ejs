@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+         body{
+        background-image: url('https://e0.pxfuel.com/wallpapers/453/370/desktop-wallpaper-ecommerce-website-design-gorakhpur-web-design-and-development-company-e-commerce.jpg');
+        background-repeat: none;
+        background-size: cover;
+    }
+    h1{
+        text-align: center;
+      
+    }
+    #store{
+        background-color: beige;
+        padding-left: 20px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    }
+    #inventory{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item{
+        
+        height: 25vh;
+        width: 15vw;
+        background-color: aliceblue;
+        border-radius: 10px;
+        padding-left: 15px;
+        margin-top: 2vh;
+    }
+    #url{
+        margin-top: 5vh;
+    }
+    #add{
+        color: white;
+        cursor: pointer;
+        margin-left: 80vw;
+        font-size: 1.5rem;
+    }
+
+    </style>
+</head>
+<body>
+  <div id="store">
+    <h1 >Store Info</h1>
+    <p>Email:<%= userInfo.email %></p>
+    <p>Address: <%= storeInfo.address %></p>
+    <p>GST: <%= storeInfo.gst %></p>
+    <p>Logo: <%= storeInfo.logo %></p>
+    <p>Store Timings: <%= storeInfo.storeTimings %></p>
+</div>
+
+    <h1>Inventory Items</h1>
+    <a href="/inventory" id="add">Add Inventories</a>
+    <div id="inventory">
+    <% if (inventoryItems.length > 0) { %>
+      <% inventoryItems.forEach(function(item) { %>
+        <div class="item">
+          <h3><%= item.productName %></h3>
+          <p>MRP: <%= item.mrp %></p>
+          <p>SP: <%= item.sp %></p>
+          <p>Quantity: <%= item.qty %></p>
+          <!-- Display other item details as needed -->
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>No inventory items found</p>
+    <% } %>
+</div>
+<div id="url">
+    <% if (storeInfo) { %>
+        <a href="<%= sellerURL %>">View Seller Inventory</a>
+      <% } %>
+    </div>
+    
+</body>
+</html>
+
+
